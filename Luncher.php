@@ -1,7 +1,7 @@
 ﻿<?php
 
 define('BOT_TOKEN', 'TOKEN');
-define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
+define('API_URL', 'https://api.telegram.org/bot'.302767813:AAGzwc8fAJH8_4MdizJMMOWvoUXpsHqvp1A.'/');
 
 function apiRequestWebhook($method, $parameters) {
   if (!is_string($method)) {
@@ -120,7 +120,7 @@ function processMessage($message) {
   if (isset($message['text'])) {
     // incoming text message
     $text = $message['text'];
-    $admin = 238773538;
+    $admin = 143413709;
     $matches = explode(' ', $text);
     $substr = substr($text, 0,7 );
     if (strpos($text, "/start") === 0) {
@@ -139,8 +139,8 @@ function processMessage($message) {
 Creating a robot 👉* /crtoken
 
 *Note that the command 📌* `/setinline` *in* @BotFather *inline capabilities enable your robot ...*
-- *dev* : @MutePuker
-- *channel* : @MuteTeam
+- *dev* : @PvSuDo
+- *channel* : @Plus_Tm
 ',"parse_mode"=>"MARKDOWN","disable_web_page_preview"=>"true"));
 
 
@@ -160,7 +160,7 @@ $pmembersid= explode("\n",$txxt);
       apiRequest("sendMessage", array('chat_id' => $chat_id,  "text" => "All robots: ".$tcount,"parse_mode"=>"HTML"));        
     }
     }else if ($text == "/crtoken") {
-      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "[.](https://telegram.me/MuteTeam/2868)","parse_mode"=>"MARKDOWN"));
+      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "[.](https://telegram.me/Plus_tm/658)","parse_mode"=>"MARKDOWN"));
     }
     else if ($matches[0] == "/update"&& strpos($matches[1], ":")==true) {
       $txtt = file_get_contents('tokens.txt');
@@ -247,7 +247,7 @@ $output = curl_exec($ch);
       else{
          apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🔸شما قبلا در هاست من يك ربات ثبت كرده ايد 😊
 🔷 شما به دليل بالا نميتوانيد يك ربات ديگر بسازيد ... 😁
-@XoSazBot"));
+@Dont3DiteBot"));
       }
     }
       
@@ -320,7 +320,7 @@ $output = curl_exec($ch);
       else{
          apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🔸شما قبلا در هاست من يك ربات ثبت كرده ايد 😊
 🔷 شما به دليل بالا نميتوانيد يك ربات ديگر بسازيد ... 😁
-@XoSazBot"));
+@Dont3DiteBot"));
       }
 
     }
